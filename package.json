@@ -4,10 +4,9 @@
   "repository": "NateRadebaugh/popover",
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
-    "build:changed": "lerna run build --parallel --since origin/master",
     "build": "lerna run build --parallel",
     "lint": "lerna run lint",
-    "release": "yarn build:changed && lerna publish --since origin/master"
+    "release": "yarn build && lerna publish"
   },
   "dependencies": {
     "@babel/cli": "^7.5.5",
