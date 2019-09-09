@@ -1,6 +1,6 @@
 {
   "name": "@nateradebaugh/popover",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Render a portal positioned relative to another element.",
   "main": "index.js",
   "module": "es/index.js",

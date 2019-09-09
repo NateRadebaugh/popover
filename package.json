@@ -2,13 +2,33 @@
   "private": true,
   "name": "@nateradebaugh/popover",
   "repository": "NateRadebaugh/popover",
+  "version": "0.2.1",
+  "description": "Render a portal positioned relative to another element.",
+  "main": "index.js",
+  "module": "es/index.js",
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
-    "build": "lerna run build --parallel",
-    "lint": "lerna run lint",
-    "release": "yarn build && lerna publish"
+    "build": "node shared/build-package",
+    "lint": "yarn run lint",
+    "release": "yarn build && yarn publish"
   },
+  "license": "MIT",
+  "files": [
+    "es",
+    "src",
+    "lib",
+    "index.js",
+    "styles.css"
+  ],
   "dependencies": {
+    "@reach/rect": "^0.2.1",
+    "@reach/utils": "^0.2.3"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
@@ -27,19 +47,15 @@
     "eslint-plugin-react": "7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
     "husky": "^3.0.5",
-    "lerna": "^3.16.4",
     "prettier": "^1.13.5",
     "pretty-quick": "^1.6.0",
     "react": "^16.8.0",
     "react-dom": "^16.8.0"
   },
-  "workspaces": [
-    "packages/*"
-  ],
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged",
-      "pre-push": "lerna run lint"
+      "pre-push": "yarn run lint"
     }
   }
 }

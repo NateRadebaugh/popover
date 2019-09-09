@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import Popover from "../src/index";
 
-export let name = "Basic";
-
 export function Example() {
   const [isOpen, setIsOpen] = useState(false);
   const targetRef = useRef();

@@ -7,6 +7,7 @@ const getStyles = (position, targetRect, popoverRect) => {
   if (needToMeasurePopup) {
     return { visibility: "hidden" };
   }
+
   return position(targetRect, popoverRect);
 };
 
@@ -15,6 +16,7 @@ function positionDefault(targetRect, popoverRect) {
     targetRect,
     popoverRect
   );
+
   return {
     left: directionRight
       ? `${targetRect.right - popoverRect.width + window.pageXOffset}px`
