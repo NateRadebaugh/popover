@@ -24,7 +24,7 @@ export function Example() {
               width: 400
             }}
           >
-            <p>Huzzah!!! I am here! WASSUPPPPP</p>
+            <p>Popover content</p>
           </div>
         </Popover>
       )}
