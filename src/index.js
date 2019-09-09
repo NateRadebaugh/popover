@@ -58,7 +58,7 @@ const Popover = forwardRef(function Popover(
 
   return (
     <div
-      data-reach-popover=""
+      data-popover=""
       ref={node => {
         assignRef(popoverRef, node);
         assignRef(forwardedRef, node);
