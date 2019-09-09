@@ -1,5 +1,5 @@
 {
-  "name": "@reach/popover",
+  "name": "@nateradebaugh/popover",
   "version": "0.1.0",
   "description": "Render a portal positioned relative to another element.",
   "main": "index.js",
@@ -9,10 +9,8 @@
     "lint": "eslint . --max-warnings=0"
   },
   "dependencies": {
-    "@reach/portal": "^0.2.1",
     "@reach/rect": "^0.2.1",
-    "@reach/utils": "^0.2.3",
-    "tabbable": "^4.0.0"
+    "@reach/utils": "^0.2.3"
   },
   "peerDependencies": {
     "react": "^16.8.0",

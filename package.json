@@ -1,13 +1,12 @@
 {
   "private": true,
-  "name": "reach-ui",
-  "repository": "reach/reach-ui",
+  "name": "@nateradebaugh/popover",
+  "repository": "NateRadebaugh/popover",
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
     "build:changed": "lerna run build --parallel --since origin/master",
     "build": "lerna run build --parallel",
-    "clean": "git clean -fdX .",
-    "release": "lerna run test --since origin/master && yarn build:changed && lerna publish --since origin/master"
+    "release": "yarn build:changed && lerna publish --since origin/master"
   },
   "dependencies": {
     "@babel/cli": "^7.5.5",
