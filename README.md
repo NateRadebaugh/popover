@@ -22,11 +22,11 @@ yarn build
 ## Scripts:
 
 ```sh
-yarn build        # builds all packages
+yarn build        # builds the package
 
 yarn start        # starts storybook server
 
-yarn release      # publishes package
+yarn release      # publishes the package
 ```
 
 ## Running Examples

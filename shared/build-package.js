@@ -1,4 +1,4 @@
-// this gets run from the package directory
+// this gets run from the root directory
 const execSync = require("child_process").execSync;
 const path = require("path");
 
