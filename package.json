@@ -9,7 +9,7 @@
   "scripts": {
     "start": "start-storybook -p 9001 -c .storybook",
     "build": "node shared/build-package",
-    "lint": "yarn run lint",
+    "lint": "eslint . --max-warnings=0",
     "release": "yarn build && yarn publish"
   },
   "license": "MIT",
